@@ -65,6 +65,8 @@ body {
 }
 .logo--foot {
   color: var(--primary-white);
+  margin-bottom: 20px;
+  display: block;
 }
 .list {
   padding: 0;
@@ -101,7 +103,7 @@ body {
   align-items: center;
 }
 
-.list--contact .item:not(:last-child) {
+.list--contact__item:not(:last-child) {
   margin-right: 50px;
 }
 
@@ -155,7 +157,7 @@ body {
   border-radius: 2px;
 }
 
-.list--contact .link {
+.list--contact__link {
   color: var(--main-text-color);
   text-decoration: none;
 
@@ -167,8 +169,8 @@ body {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.list--contact .link:hover,
-.list--contact .link:focus {
+.list--contact__link:hover,
+.list--contact__link:focus {
   color: var(--accent-color);
 }
 
