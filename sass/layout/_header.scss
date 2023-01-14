@@ -1,34 +1,32 @@
 .head {
-    border-bottom: 1px solid $header-border;
-  }
+  border-bottom: 1px solid $header-border;
+}
 
-  .head__container {
-    display: flex;
-    align-items: center;
-  }
+.head__container {
+  display: flex;
+  align-items: center;
+}
 
-  
-  .nav {
-    display: flex;
-    align-items: center;
-    font-weight: 500;
+.nav {
+  display: flex;
+  align-items: center;
+  font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
-letter-spacing: 0.02em;
+  letter-spacing: 0.02em;
 
-&__list {
-  margin-left: 93px;
-}
+  &__list {
+    margin-left: 93px;
+  }
 
-&__item:not(:last-child) {
-  margin-right: 50px;
-}
-
+  &__item:not(:last-child) {
+    margin-right: 50px;
+  }
 }
 
 .nav__link {
   color: $title-text-color;
- 
+
   padding-top: 32px;
   padding-bottom: 32px;
 
@@ -36,32 +34,32 @@ letter-spacing: 0.02em;
   transition-duration: 250ms;
   transition-timing-function: $cubic;
 
-
-
-  &:hover {color: $accent-color;}
-  &:focus {color: $accent-color;}
+  &:hover {
+    color: $accent-color;
+  }
+  &:focus {
+    color: $accent-color;
+  }
 
   &--current {
     position: relative;
     color: $accent-color;
 
-&::after
-{
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 4px;
-  bottom: -1px;
-  left: 0;
+    &::after {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 4px;
+      bottom: -1px;
+      left: 0;
 
-  background-color: $accent-color;
-  border-radius: 2px;
-}
+      background-color: $accent-color;
+      border-radius: 2px;
+    }
   }
 }
 
 .list--contact {
- 
   margin-left: auto;
 
   &__item:not(:last-child) {
@@ -82,7 +80,8 @@ letter-spacing: 0.02em;
   transition-duration: 250ms;
   transition-timing-function: $cubic;
 
-  &:hover, &:focus {
+  &:hover,
+  &:focus {
     color: $accent-color;
   }
 }
